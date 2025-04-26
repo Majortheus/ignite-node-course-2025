@@ -1,0 +1,49 @@
+{
+  "name": "02-daily-diet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build",
+    "test": "vitest run --project unit",
+    "test:watch": "vitest --project unit",
+    "test:e2e": "vitest run --project e2e",
+    "test:e2e:watch": "vitest --project e2e",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "1.2.0",
+    "@types/bcryptjs": "2.4.2",
+    "@types/node": "18.14.1",
+    "@types/supertest": "2.0.12",
+    "@vitest/coverage-v8": "3.1.2",
+    "@vitest/ui": "3.1.2",
+    "eslint": "8.34.0",
+    "prisma": "4.10.1",
+    "supertest": "6.3.3",
+    "tsup": "6.6.3",
+    "tsx": "3.12.3",
+    "typescript": "4.9.5",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "3.1.2"
+  },
+  "dependencies": {
+    "@fastify/cookie": "8.3.0",
+    "@fastify/jwt": "6.7.0",
+    "@prisma/client": "4.10.1",
+    "bcryptjs": "2.4.3",
+    "dayjs": "1.11.7",
+    "dotenv": "16.0.3",
+    "fastify": "4.13.0",
+    "zod": "3.20.6"
+  }
+}
